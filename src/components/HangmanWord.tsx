@@ -2,6 +2,15 @@ import React from 'react'
 
 export const HangmanWord = () => {
   return (
-    <div>HangmanWord</div>
+    <div style={{
+      display: "flex",
+      gap: ".25em",
+      fontSize: "6rem",
+      fontWeight: "bold",
+      textTransform: "uppercase",
+      fontFamily: "monospace"
+    }}>
+      Test
+    </div>
   )
 }
