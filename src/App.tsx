@@ -3,6 +3,7 @@ import words from "./wordList.json"
 import { HangmanDrawing } from "./components/HangmanDrawing"
 import { HangmanWord } from "./components/HangmanWord"
 import Keyboard from "./components/Keyboard"
+import styles from "./Keyboard.module.css"
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
@@ -28,7 +29,9 @@ function App() {
       </div>
       <HangmanDrawing />
       <HangmanWord />
-      <Keyboard />
+      <div className={`${styles.keyboard}`}>
+        <Keyboard />
+      </div>
     </div>
   )
 }
