@@ -11,6 +11,20 @@
     color: black
 }
 
+.btn.active {
+    background-color: rgb(1, 78, 111);
+    color: white;
+}
+
+.btn.inactive {
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: rgb(62, 174, 222);
+}
+
 .keyboard {
     align-self: stretch;
 }
